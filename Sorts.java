@@ -16,9 +16,9 @@ public class Sorts{
           temp = data[i+1];
           data[i+1] = data[i];
           data[i] = temp;
-          System.out.println(Arrays.toString(data));
+          //System.out.println(Arrays.toString(data));
         }
-        //System.out.println(Arrays.toString(data));
+        System.out.println(Arrays.toString(data));
       }
     }
   }
