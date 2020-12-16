@@ -23,6 +23,11 @@ public class Tester{
     Sorts.bubbleSort(array4);
     System.out.println("**************************");
 
+    int [] empty = new int[]{};
+    System.out.println(Arrays.toString(empty));
+    Sorts.bubbleSort(empty);
+    System.out.println("**************************");
+
     Random rngSeed = new Random();
     int seed = rngSeed.nextInt();
     System.out.print("seed: ");
