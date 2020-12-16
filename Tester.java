@@ -23,6 +23,21 @@ public class Tester{
     Sorts.bubbleSort(array4);
     System.out.println("**************************");
 
+    int [] array5 = new int[]{9,9,1,1,2,2,3,4,5,5};
+    System.out.println(Arrays.toString(array5));
+    Sorts.bubbleSort(array5);
+    System.out.println("**************************");
+
+    int [] array6 = new int[]{9,8,7,6,5,4,3,2,1};
+    System.out.println(Arrays.toString(array6));
+    Sorts.bubbleSort(array6);
+    System.out.println("**************************");
+
+    int [] array7 = new int[]{0,0,0,0,0,0,0,0,0,0,0};
+    System.out.println(Arrays.toString(array7));
+    Sorts.bubbleSort(array7);
+    System.out.println("**************************");
+
     int [] empty = new int[]{};
     System.out.println(Arrays.toString(empty));
     Sorts.bubbleSort(empty);
