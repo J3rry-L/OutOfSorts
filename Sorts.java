@@ -22,4 +22,21 @@ public class Sorts{
       }
     }
   }
+
+  public static void selectionSort(int[] data){
+    int minIndex;
+    int temp;
+    for (int i = 0; i < data.length; i++){
+      minIndex = i;
+      for (int j = i; j < data.length; j++){
+        if(data[j] < data[minIndex]){
+          minIndex = j;
+        }
+      }
+      temp = data[i];
+      data[i] = data[minIndex];
+      data[minIndex] = temp;
+      System.out.println(Arrays.toString(data));
+    }
+  }
 }
