@@ -39,4 +39,19 @@ public class Sorts{
       System.out.println(Arrays.toString(data));
     }
   }
+
+  public static void insertionSort(int[] data){
+    int temp;
+    int j;
+    for (int i = 0; i < data.length; i++){
+      temp = data[i];
+      j = i - 1;
+      while(j >= 0 && temp < data[j]){
+        data[j+1] = data[j];
+        j = j - 1;
+      }
+      data[j + 1] = temp;
+      System.out.println(Arrays.toString(data));
+    }
+  }
 }
