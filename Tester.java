@@ -78,5 +78,11 @@ public class Tester{
     int [] array8 = new int[]{64, 25, 12, 22, 11};
     Sorts.selectionSort(array8);
     System.out.println(Arrays.toString(array8));
+    System.out.println("**************************");
+
+    System.out.println("\nInsertion Sort Tests:");
+    int [] array9 = new int[]{4,3,2,10,12,1,5,6};
+    Sorts.insertionSort(array9);
+    System.out.println(Arrays.toString(array9));
   }
 }
