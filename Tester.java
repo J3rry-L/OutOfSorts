@@ -3,6 +3,8 @@ import java.util.Arrays;
 import java.util.Random;
 public class Tester{
   public static void main(String args[]){
+    System.out.println("Bubble Sort Tests:");
+
     int [] array1 = new int[]{5,1,12,-5,16};
     System.out.println(Arrays.toString(array1));
     Sorts.bubbleSort(array1);
@@ -70,5 +72,11 @@ public class Tester{
     Sorts.bubbleSort(randomArray);
     System.out.println(Arrays.toString(randomArray));
     System.out.println(Arrays.equals(randomKey, randomArray));
+    System.out.println("**************************");
+
+    System.out.println("\nSelection Sort Tests:");
+    int [] array8 = new int[]{64, 25, 12, 22, 11};
+    Sorts.selectionSort(array8);
+    System.out.println(Arrays.toString(array8));
   }
 }
