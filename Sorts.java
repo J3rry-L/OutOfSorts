@@ -36,7 +36,7 @@ public class Sorts{
       temp = data[i];
       data[i] = data[minIndex];
       data[minIndex] = temp;
-      System.out.println(Arrays.toString(data));
+      //System.out.println(Arrays.toString(data));
     }
   }
 
@@ -51,7 +51,7 @@ public class Sorts{
         j = j - 1;
       }
       data[j + 1] = temp;
-      System.out.println(Arrays.toString(data));
+      //System.out.println(Arrays.toString(data));
     }
   }
 }
