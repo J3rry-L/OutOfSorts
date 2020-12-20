@@ -79,10 +79,35 @@ public class Tester{
     Sorts.selectionSort(array8);
     System.out.println(Arrays.toString(array8));
     System.out.println("**************************");
+    int [] array9 = new int[]{1,2,3,4,5,6,7,8,9,10};
+    Sorts.selectionSort(array9);
+    System.out.println(Arrays.toString(array9));
+    System.out.println("**************************");
+    int [] array10 = new int[]{10,9,8,7,6,5,4,3,2,1,0,-1};
+    Sorts.selectionSort(array10);
+    System.out.println(Arrays.toString(array10));
+    System.out.println("**************************");
+    Sorts.selectionSort(empty);
+    System.out.println(Arrays.toString(empty));
+    System.out.println("**************************");
+    int [] randomArray2 = new int [25];
+    for(int i =  0; i < 25; i++ ){
+      randomArray2[i] = (rng.nextInt() % 100);
+    }
+    int[] randomKey2 = randomArray2.clone();
+    System.out.println(Arrays.toString(randomKey2));
+    Arrays.sort(randomKey2);
+    System.out.println(Arrays.toString(randomKey2));
+    System.out.println("**************************");
+    System.out.println(Arrays.toString(randomArray2));
+    Sorts.selectionSort(randomArray2);
+    System.out.println(Arrays.toString(randomArray2));
+    System.out.println(Arrays.equals(randomKey2, randomArray2));
+    System.out.println("**************************");
 
     System.out.println("\nInsertion Sort Tests:");
-    int [] array9 = new int[]{4,3,2,10,12,1,5,6};
-    Sorts.insertionSort(array9);
-    System.out.println(Arrays.toString(array9));
+    int [] array100 = new int[]{4,3,2,10,12,1,5,6};
+    Sorts.insertionSort(array100);
+    System.out.println(Arrays.toString(array100));
   }
 }
